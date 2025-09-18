@@ -1,11 +1,12 @@
 import { Card, CardBody, Heading, HStack, Image, Text } from "@chakra-ui/react";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
+import getCroppedUrl from "../services/image-url";
 
 const GameCard = ({ game }) => {
   return (
     <Card borderRadius={10} overflow="hidden">
-      <Image src={game.background_image} alt="gameimg" />
+      <Image src={getCroppedUrl(game.background_image)} alt="gameimg" />
       <CardBody>
         <Heading fontSize="2xl">{game.name}</Heading>
         <HStack justifyContent="space-between">
