@@ -1,0 +1,10 @@
+.hover-text {
+  transition: color 0.3s, transform 0.3s; /* smooth effect */
+}
+
+.hover-text:hover {
+  font-weight: 600;
+  color: rgb(61, 61, 61); /* text color changes */
+  transform: scale(1.06); /* text grows slightly */
+  cursor: pointer; /* pointer cursor */
+}

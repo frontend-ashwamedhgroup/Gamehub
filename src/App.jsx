@@ -6,8 +6,7 @@ import PlatformSelector from "./components/PlatformSelector";
 import GameGrid from "./components/GameGrid";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
-// const [selectedGenre, setSelectedGenre] = useState(null);
-// const [selectedPlatform, setSelectedPlatform] = useState(null);
+import "./App.css";
 
 function App() {
   const [gameQuery, setGameQuery] = useState({});
@@ -20,7 +19,7 @@ function App() {
       }}
       templateColumns={{
         base: "1fr",
-        lg: "260px 1fr",
+        lg: "265px 1fr",
       }}
     >
       <GridItem area="nav">

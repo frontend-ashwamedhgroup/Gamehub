@@ -23,7 +23,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }) => {
         {isLoading &&
           skeletons.map((skeleton) => <GenreSkeleton key={skeleton} />)}
         {data.map((genre) => (
-          <ListItem key={genre.id} paddingY={"5px"}>
+          <ListItem key={genre.id} paddingY={"3px"}>
             <HStack>
               <Image
                 boxSize="40px"
@@ -32,8 +32,11 @@ const GenreList = ({ selectedGenre, onSelectGenre }) => {
                 src={getCroppedUrl(genre.image_background)}
               />
               <Button
+                className="hover-text"
                 whiteSpace="normal"
-                fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
+                fontWeight={
+                  genre.id === selectedGenre?.id ? "semibold" : "normal"
+                }
                 onClick={() => onSelectGenre(genre)}
                 variant="link"
                 fontSize="lg"
