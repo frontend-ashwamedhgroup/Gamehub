@@ -4,7 +4,7 @@
 
 .hover-text:hover {
   font-weight: 600;
-  color: rgb(61, 61, 61); /* text color changes */
+  color: rgb(70, 70, 70); /* text color changes */
   transform: scale(1.06); /* text grows slightly */
   cursor: pointer; /* pointer cursor */
 }
