@@ -10,7 +10,7 @@ import {
 import getCroppedUrl from "../services/image-url";
 import GenreSkeleton from "./GenreSkeleton";
 
-const GenreList = ({ selectedGenre, onSelectGenre }) => {
+const GenreList = ({ selectedGenreId, onSelectGenre }) => {
   const { data, isLoading } = useGenres();
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17];
 
@@ -35,7 +35,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }) => {
                 className="hover-text"
                 whiteSpace="normal"
                 fontWeight={
-                  genre.id === selectedGenre?.id ? "semibold" : "normal"
+                  genre.id === selectedGenreId ? "semibold" : "normal"
                 }
                 onClick={() => onSelectGenre(genre)}
                 variant="link"
