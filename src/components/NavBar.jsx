@@ -3,11 +3,11 @@ import logo from "../assets/gaming.svg";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 
-const NavBar = ({ onSearch }) => {
+const NavBar = () => {
   return (
     <HStack padding={"10px"}>
       <Image src={logo} borderRadius={10} boxSize="60px" />
-      <SearchInput onSearch={onSearch} />
+      <SearchInput  />
       <ColorModeSwitch />
     </HStack>
   );
