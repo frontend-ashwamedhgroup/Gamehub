@@ -1,9 +1,9 @@
-import { Card, CardBody, Heading, HStack, Image, Text } from "@chakra-ui/react";
-import PlatformIconList from "./PlatformIconList";
-import CriticScore from "./CriticScore";
-import getCroppedUrl from "../services/image-url";
-import Emoji from "./Emoji";
+import { Card, CardBody, Heading, HStack, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import getCroppedUrl from "../services/image-url";
+import CriticScore from "./CriticScore";
+import Emoji from "./Emoji";
+import PlatformIconList from "./PlatformIconList";
 
 const GameCard = ({ game }) => {
   return (

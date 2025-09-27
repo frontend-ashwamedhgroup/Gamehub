@@ -1,4 +1,4 @@
-import { Box, transform } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 const GameCardContainer = ({ children }) => {
   return (
