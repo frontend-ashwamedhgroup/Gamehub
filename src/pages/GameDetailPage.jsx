@@ -4,6 +4,7 @@ import ExpandableText from "../components/ExpandableText";
 import GameAttribute from "../components/GameAttribute";
 import useGame from "../hooks/useGame";
 import GameScreenshots from "../components/GameScreenshots";
+import GameTrailers from "../components/GameTrailers";
 
 const GameDetailPage = () => {
   const { slug } = useParams();
@@ -20,6 +21,7 @@ const GameDetailPage = () => {
         <GameAttribute game={game} />
       </GridItem>
       <GridItem>
+        {/* <GameTrailers gameId={game.id} /> */}
         <GameScreenshots gameId={game.id} />
       </GridItem>
     </SimpleGrid>
